@@ -318,6 +318,7 @@ RegisterNetEvent('iens:repaira', function()
 	WashDecalsFromVehicle(vehicle, 1.0)
 	exports.qbx_core:Notify(locale('success.repaired_veh'))
 	SetVehicleFixed(vehicle)
+    Entity(vehicle).state.fuel = 100.0
 	healthBodyLast = 1000.0
 	healthEngineLast = 1000.0
 	healthPetrolTankLast = 1000.0
